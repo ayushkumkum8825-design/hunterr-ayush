@@ -16,13 +16,36 @@
             font-family: Arial, sans-serif;
         }
 
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 18px 10px;
+            background: rgba(0, 0, 0, 0.95);
+            text-align: center;
+            z-index: 1000;
+            border-bottom: 1px solid #222;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        nav a:hover {
+            color: #00ffcc;
+        }
+
         header {
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 30px;
+            padding: 100px 20px 40px;
             background: radial-gradient(circle at top, #12332f, #080808 55%);
         }
 
@@ -36,7 +59,6 @@
         .hero h2 {
             font-size: 24px;
             margin: 15px 0;
-            color: white;
         }
 
         .hero p {
@@ -56,12 +78,6 @@
             text-decoration: none;
             border-radius: 10px;
             font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            transform: scale(1.08);
-            box-shadow: 0 0 25px #00ffcc;
         }
 
         section {
@@ -115,11 +131,24 @@
             .hero h2 {
                 font-size: 20px;
             }
+
+            nav a {
+                margin: 0 5px;
+                font-size: 11px;
+            }
         }
     </style>
 </head>
 
 <body>
+
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#services">SERVICES</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
 
     <header>
         <div class="hero">
@@ -175,7 +204,7 @@
     </section>
 
 
-    <section>
+    <section id="about">
 
         <h2>About Me</h2>
 
@@ -196,18 +225,21 @@
     </section>
 
 
-    <section>
+    <section id="contact">
 
-        <h2>Let's Create Something</h2>
+        <h2>Contact</h2>
 
         <div class="card">
 
             <p>
-                This website is my digital portfolio.
-                More creative projects will be added soon.
+                Want to work with me?
             </p>
 
-            <a class="btn" href="#services">View Services</a>
+            <p>
+                Contact details will be added soon.
+            </p>
+
+            <a class="btn" href="#about">About Me</a>
 
         </div>
 

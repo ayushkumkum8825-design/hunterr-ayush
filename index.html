@@ -4,62 +4,117 @@
     <title>HUNTERR AYUSH</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
         body {
-            background: #0b0b0b;
+            margin: 0;
+            background: #080808;
             color: white;
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
         }
 
         header {
-            padding: 80px 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: radial-gradient(circle at top, #12332f, #080808 55%);
         }
 
-        h1 {
-            font-size: 48px;
+        .hero h1 {
+            font-size: 55px;
+            margin: 0;
             color: #00ffcc;
+            text-shadow: 0 0 20px #00ffcc;
         }
 
-        h2 {
-            color: #00ffcc;
-            margin-top: 50px;
+        .hero h2 {
+            font-size: 24px;
+            margin: 15px 0;
+            color: white;
         }
 
-        p {
-            color: #cccccc;
+        .hero p {
+            color: #bdbdbd;
             font-size: 18px;
+            max-width: 600px;
+            margin: auto;
             line-height: 1.6;
         }
 
         .btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 14px 28px;
+            margin-top: 30px;
+            padding: 15px 30px;
             background: #00ffcc;
             color: #000;
             text-decoration: none;
             border-radius: 10px;
             font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 25px #00ffcc;
         }
 
         section {
-            padding: 30px 20px;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 35px;
+            color: #00ffcc;
+            margin-bottom: 35px;
         }
 
         .card {
-            background: #171717;
+            background: #151515;
             max-width: 500px;
             margin: 20px auto;
-            padding: 25px;
-            border-radius: 15px;
+            padding: 30px;
+            border-radius: 18px;
+            border: 1px solid #222;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #00ffcc;
+        }
+
+        .card h3 {
+            color: #00ffcc;
+            font-size: 23px;
+        }
+
+        .card p {
+            color: #bbb;
+            line-height: 1.6;
         }
 
         footer {
-            margin-top: 50px;
-            padding: 25px;
+            text-align: center;
+            padding: 30px;
             background: #111;
-            color: #888;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -67,59 +122,101 @@
 <body>
 
     <header>
-        <h1>HUNTERR AYUSH</h1>
-        <p>Creative Editor • Designer • Web Creator</p>
-        <a class="btn" href="#services">Explore My Work</a>
+        <div class="hero">
+
+            <h1>HUNTERR AYUSH</h1>
+
+            <h2>Creative Editor • Designer • Web Creator</h2>
+
+            <p>
+                Turning ideas into creative digital work.
+                I am learning video editing, design,
+                web development and AI tools.
+            </p>
+
+            <a class="btn" href="#services">Explore My Work</a>
+
+        </div>
     </header>
 
+
     <section id="services">
+
         <h2>My Services</h2>
 
         <div class="card">
             <h3>🎬 Video Editing</h3>
-            <p>Reels, cinematic edits and creative videos.</p>
+            <p>
+                Reels, cinematic edits and creative videos.
+            </p>
         </div>
 
         <div class="card">
             <h3>🎨 Poster & Thumbnail</h3>
-            <p>Creative posters and attractive thumbnails.</p>
+            <p>
+                Creative posters and attractive thumbnails.
+            </p>
         </div>
 
         <div class="card">
             <h3>🌐 Web Designing</h3>
-            <p>Modern and responsive websites.</p>
+            <p>
+                Modern and responsive websites.
+            </p>
         </div>
 
         <div class="card">
-            <h3>🤖 AI Tools</h3>
-            <p>Creative projects using modern AI tools.</p>
+            <h3>🤖 AI Projects</h3>
+            <p>
+                Creative projects using modern AI tools.
+            </p>
         </div>
+
     </section>
 
+
     <section>
+
         <h2>About Me</h2>
 
         <div class="card">
+
             <p>
-                Hello! I am Ayush, a creative editor and web creator.
-                I am learning video editing, graphic design,
-                web designing and AI tools.
+                Hello! I am Ayush, a creative editor,
+                designer and web creator.
             </p>
+
+            <p>
+                I am continuously learning new digital
+                skills and building creative projects.
+            </p>
+
         </div>
+
     </section>
+
 
     <section>
-        <h2>Contact</h2>
+
+        <h2>Let's Create Something</h2>
 
         <div class="card">
-            <p>Want to work with me?</p>
-            <p>More contact options will be added soon.</p>
+
+            <p>
+                This website is my digital portfolio.
+                More creative projects will be added soon.
+            </p>
+
+            <a class="btn" href="#services">View Services</a>
+
         </div>
+
     </section>
 
+
     <footer>
-        © 2026 HUNTERR AYUSH
+        © 2026 HUNTERR AYUSH | Creative Digital Work
     </footer>
 
 </body>
-          </html>
+</html>
